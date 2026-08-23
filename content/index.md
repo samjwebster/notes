@@ -2,6 +2,8 @@
 title: Sam's Notes
 ---
 
+Remember `npx quartz sync` to update.
+
 Go to [[Leetcode Problems]]
 
 GRINDSET. Completed by days:
