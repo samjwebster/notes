@@ -1,4 +1,11 @@
 ---
+tags: 
+    - lc-medium
+    - lc-pinterest
+    - lc-recursion
+    - lc-backtracking
+    - lc-revisit
+title: 698. Partition to K Equal Sum Subsets
 ---
 
 
