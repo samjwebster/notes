@@ -4,7 +4,7 @@ tags:
     - lc-two-pointers
     - lc-dp
     - lc-revisit
-title: 14. Longest Common Prefix
+title: 42. Trapping Rain Water
 ---
 
 You are given an array `height`, where each index stores a height in a one-dimensional heightmap. The heightmap can trap water at positions which form sinks along the heightmap.

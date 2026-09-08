@@ -48,3 +48,27 @@ class Solution:
         
         return prefix
 ```
+
+A smart way of iterating through less strings, found in a Leetcode solution:
+
+Instead of finding the shortest length string through min of all lengths, and then iterating over that length on every string:
+1. sort the entire list of strings
+2. compare only the first string with the last string.
+3. Since alphabetical sorting will essentially order words by their prefix, these two are the 'furthest' prefixes apart. So, the result shared prefix will break in this word (if it has one). 
+4. Iterate over the length of the shorter of first/last strings. If the `i`th character is shared, add it to the result.
+5. if we find a discrepency, return the current result. otherwise, loop the min length and return the result after loop
+
+```
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        strs = sorted(strs)
+
+        first = strs[0]
+        last = strs[-1]
+        prefix = ""
+        for i in range(min(len(first), len(last))):
+            if first[i] != last[i]:
+                return prefix
+            prefix += first[i]
+        return prefix
+```

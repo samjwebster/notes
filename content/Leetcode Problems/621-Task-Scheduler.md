@@ -3,7 +3,6 @@ tags:
     - lc-medium
     - lc-pinterest
     - lc-heap
-    - lc-revisit
 title: 621. Task Scheduler
 ---
 
